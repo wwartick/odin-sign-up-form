@@ -27,11 +27,46 @@
 
         <div class="form-container">
             <div class="left-form-column">
+                <h2>Let's do this!</h2>
+                <!-- firstname email password -->
+                <form>
+                    <ul class="right-form">
+                        <li>
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="firstName"  placeholder="Porter" name="user_first_name"/>
+                        <li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="email" id="mail" placeholder="VirtualSelf@potaro.org" name="user_email"/>
+                        <li>
+                        <li>
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="user_password"/>
+                        <li>
+                    </ul>
+                </form>
 
             </div>
 
             <div class="right-form-column">
-                
+                <!-- lastname phone number passwordconfirm -->
+                <form>
+                    <ul class="right-form">
+                        <li>
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="lastName" name="user_last_name" placeholder="Robinson"/>
+                        <li>
+                        <li>
+                            <label for="phone-number">Phone Number:</label>
+                            <input type="tel" id="phoneNumber" name="user_phone_number" placeholder="1234567890" pattern="[0-9]{10}"/>
+                        <li>
+                        <li>
+                            <label for="conPassword">Confirm password:</label>
+                            <input type="password" id="confirmPassword" name="user_confirm_password"/>
+                        <li>
+                    </ul>
+                </form>
+
             </div>
         </div>
 

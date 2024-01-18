@@ -33,51 +33,47 @@
                     <ul class="right-form">
                         <li>
                             <label for="first-name">First Name:</label>
-                            <input type="text" id="firstName"  placeholder="Porter" name="user_first_name"/>
+                            <input type="text" id="firstName"  placeholder="Porter" name="user_first_name" required />
                         <li>
                         <li>
                             <label for="email">Email:</label>
-                            <input type="email" id="mail" placeholder="VirtualSelf@potaro.org" name="user_email"/>
+                            <input type="email" id="mail" placeholder="VirtualSelf@potaro.org" name="user_email" required/>
                         <li>
                         <li>
                             <label for="password">Password:</label>
-                            <input type="password" id="password" name="user_password"/>
+                            <input type="password" id="password" name="user_password" required/>
                         <li>
                     </ul>
-                </form>
-
             </div>
 
             <div class="right-form-column">
                 <!-- lastname phone number passwordconfirm -->
-                <form>
+                
                     <ul class="right-form">
                         <li>
                             <label for="last-name">Last Name:</label>
-                            <input type="text" id="lastName" name="user_last_name" placeholder="Robinson"/>
+                            <input type="text" id="lastName" name="user_last_name" placeholder="Robinson" required/>
                         <li>
                         <li>
                             <label for="phone-number">Phone Number:</label>
-                            <input type="tel" id="phoneNumber" name="user_phone_number" placeholder="1234567890" pattern="[0-9]{10}"/>
+                            <input type="tel" id="phoneNumber" name="user_phone_number" placeholder="1234567890" pattern="[0-9]{10}" title="No dashes in the number, should
+                            be 10 digits" required/>
                         <li>
                         <li>
                             <label for="conPassword">Confirm password:</label>
-                            <input type="password" id="confirmPassword" name="user_confirm_password"/>
+                            <input type="password" id="confirmPassword" name="user_confirm_password" required/>
                         <li>
                     </ul>
-                </form>
-
+                
             </div>
         </div>
 
         <div class="bottom-container">
-            <button class="submit">Submit</button>
+            <button type="submit" class="submit">Submit</button>
             <p>Already have an account? <span>Login here (not really)</span></p>
         </div>
-
-
+    </form>
     </div>
-    
 </body>
 
 <script type="text/javascript" src="script.js"></script>
